@@ -7,7 +7,7 @@ $(document).ready(function() {
          } else {
           $('#about').show(700);
          }
-         if ($(this).scrollTop()>400) {
+         if ($(this).scrollTop()>500) {
             $('#skills').show(1500);
          }
      });
