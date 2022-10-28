@@ -1,5 +1,6 @@
 $(document).ready(function() {
-
+    $('#about').hide();
+    $('#skills').hide();
     $(window).scroll(function() {
         if ($(this).scrollTop()<200) {
             $('#about').hide(500);
