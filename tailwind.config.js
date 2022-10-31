@@ -4,6 +4,12 @@ module.exports = {
     "./**/*.html"
   ],
   theme: {
+    screens: {
+      'mobile': '320px',
+      'tablet': '451px',
+      'laptop': '768px',
+      'desktop': '1024px',
+    },
     extend: {
       backgroundImage: {
         'bio': "url('../img/bio.jpg')",

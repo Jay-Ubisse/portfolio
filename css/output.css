@@ -561,9 +561,15 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 320px) {
   .container {
-    max-width: 640px;
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 451px) {
+  .container {
+    max-width: 451px;
   }
 }
 
@@ -579,20 +585,20 @@ video {
   }
 }
 
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
+.absolute {
+  position: absolute;
 }
 
 .relative {
   position: relative;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
+.right-2 {
+  right: 0.5rem;
 }
 
 .-top-20 {
@@ -618,11 +624,6 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.my-7 {
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
-}
-
 .mt-28 {
   margin-top: 7rem;
 }
@@ -641,10 +642,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-7 {
-  margin-bottom: 1.75rem;
 }
 
 .mb-9 {
@@ -713,10 +710,6 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .gap-6 {
@@ -845,10 +838,6 @@ video {
   padding-top: 1.75rem;
 }
 
-.pb-7 {
-  padding-bottom: 1.75rem;
-}
-
 .text-justify {
   text-align: justify;
 }
@@ -908,14 +897,14 @@ video {
   color: rgb(193 18 31 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-\[\#E0E1DD\] {
   --tw-text-opacity: 1;
   color: rgb(224 225 221 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-\[\#ced4da\] {
@@ -930,4 +919,176 @@ video {
 .hover\:text-\[\#c1121f\]:hover {
   --tw-text-opacity: 1;
   color: rgb(193 18 31 / var(--tw-text-opacity));
+}
+
+@media (min-width: 320px) {
+  .mobile\:absolute {
+    position: absolute;
+  }
+
+  .mobile\:top-2 {
+    top: 0.5rem;
+  }
+
+  .mobile\:right-2 {
+    right: 0.5rem;
+  }
+
+  .mobile\:-top-40 {
+    top: -10rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .laptop\:relative {
+    position: relative;
+  }
+
+  .laptop\:top-0 {
+    top: 0px;
+  }
+
+  .laptop\:right-0 {
+    right: 0px;
+  }
+
+  .laptop\:-top-20 {
+    top: -5rem;
+  }
+
+  .laptop\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .laptop\:mt-28 {
+    margin-top: 7rem;
+  }
+
+  .laptop\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
+  .laptop\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
+  .laptop\:flex {
+    display: flex;
+  }
+
+  .laptop\:hidden {
+    display: none;
+  }
+
+  .laptop\:w-\[25\%\] {
+    width: 25%;
+  }
+
+  .laptop\:w-2\/4 {
+    width: 50%;
+  }
+
+  .laptop\:flex-row {
+    flex-direction: row;
+  }
+
+  .laptop\:flex-col {
+    flex-direction: column;
+  }
+
+  .laptop\:justify-between {
+    justify-content: space-between;
+  }
+
+  .laptop\:gap-3 {
+    gap: 0.75rem;
+  }
+
+  .laptop\:rounded-full {
+    border-radius: 9999px;
+  }
+
+  .laptop\:border-x-4 {
+    border-left-width: 4px;
+    border-right-width: 4px;
+  }
+
+  .laptop\:border-b {
+    border-bottom-width: 1px;
+  }
+
+  .laptop\:border-\[\#c1121f\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(193 18 31 / var(--tw-border-opacity));
+  }
+
+  .laptop\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .laptop\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .laptop\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .laptop\:py-9 {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+
+  .laptop\:pl-\[25\%\] {
+    padding-left: 25%;
+  }
+
+  .laptop\:pr-\[30\%\] {
+    padding-right: 30%;
+  }
+
+  .laptop\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .laptop\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .laptop\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .laptop\:font-extrabold {
+    font-weight: 800;
+  }
+
+  .laptop\:font-light {
+    font-weight: 300;
+  }
+
+  .laptop\:font-bold {
+    font-weight: 700;
+  }
+
+  .laptop\:text-\[\#c1121f\] {
+    --tw-text-opacity: 1;
+    color: rgb(193 18 31 / var(--tw-text-opacity));
+  }
+
+  .laptop\:hover\:border-b:hover {
+    border-bottom-width: 1px;
+  }
+
+  .laptop\:hover\:text-\[\#c1121f\]:hover {
+    --tw-text-opacity: 1;
+    color: rgb(193 18 31 / var(--tw-text-opacity));
+  }
 }
