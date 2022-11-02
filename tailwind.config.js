@@ -15,6 +15,7 @@ module.exports = {
         'bio': "url('../img/bio.jpg')",
         'skills': "url('../img/skills.jpg')",
         'experience': "url('../img/experience.jpg')",
+        'contacts': "url('../img/contacts.jpg')",
       },
       fontFamily: {
         'inter': 'Inter, sans-serif',
