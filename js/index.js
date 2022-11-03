@@ -42,15 +42,15 @@ $(document).ready(function () {
          }
 
          if ($(this).scrollTop() > 1500) {
-            $('#projects-area').show(1500);
+            $('#projects').show(1500);
          } else {
-            $('#projects-area').hide(1500);
+            $('#projects').hide(1500);
          }
 
          if ($(this).scrollTop() > 2850) {
-            $('#experience-area').show(1500);
+            $('#experience').show(1500);
          } else {
-            $('#experience-area').hide(1500);
+            $('#experience').hide(1500);
          }
          if ($(this).scrollTop() > 3000) {
             $('#one').fadeIn(1500, function () {
