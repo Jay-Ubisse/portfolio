@@ -1,7 +1,13 @@
 $(document).ready(function () {
    $('#about').hide();
    $('#skills').hide();
-   $('#projects-area').hide();
+   $('#projects').hide();
+   $('#experience').hide();
+
+   $('#one').hide();
+   $('#two').hide();
+   $('#three').hide();
+   $('#four').hide();
 
 
    //CÓDIGO PARA DISPOSITIVOS ABAIXO DE 768PX
@@ -24,22 +30,41 @@ $(document).ready(function () {
       //codigo para os efeitos durante o scroll
       $(window).scroll(function () {
          if ($(this).scrollTop() < 100) {
-            $('#about').hide(500);
-            $('#skills').hide(500);
+            $('#about').hide(700);
          } else {
-            $('#about').show(700);
+            $('#about').show(1000);
          }
    
-         if ($(this).scrollTop() > 350) {
+         if ($(this).scrollTop() > 750) {
             $('#skills').show(1500);
          } else {
             $('#skills').hide(1500);
          }
 
-         if ($(this).scrollTop() > 300) {
+         if ($(this).scrollTop() > 1500) {
             $('#projects-area').show(1500);
          } else {
             $('#projects-area').hide(1500);
+         }
+
+         if ($(this).scrollTop() > 2850) {
+            $('#experience-area').show(1500);
+         } else {
+            $('#experience-area').hide(1500);
+         }
+         if ($(this).scrollTop() > 3000) {
+            $('#one').fadeIn(1500, function () {
+               $('#two').fadeIn(1500, function () {
+                  $('#three').fadeIn(1500, function () {
+                     $('#four').fadeIn(1500)
+                  });
+               });
+            });
+         } else {
+            $('#one').hide();
+            $('#two').hide();
+            $('#three').hide();
+            $('#four').hide();
          }
       });
 
@@ -47,23 +72,42 @@ $(document).ready(function () {
    } else {
       //codigo para os efeitos durante o scroll
       $(window).scroll(function () {
-         if ($(this).scrollTop() < 200) {
-            $('#about').hide(500);
-            $('#skills').hide(500);
+         if ($(this).scrollTop() < 150) {
+            $('#about').hide(1500);
          } else {
-            $('#about').show(700);
+            $('#about').show(1500);
          }
    
-         if ($(this).scrollTop() > 500) {
+         if ($(this).scrollTop() > 700) {
             $('#skills').show(1500);
          } else {
             $('#skills').hide(1500);
          }
 
-         if ($(this).scrollTop() > 1000) {
-            $('#projects-area').show(1500);
+         if ($(this).scrollTop() > 1200) {
+            $('#projects').show(1500);
          } else {
-            $('#projects-area').hide(1500);
+            $('#projects').hide(1500);
+         }
+
+         if ($(this).scrollTop() > 1850) {
+            $('#experience').show(1500);
+         } else {
+            $('#experience').hide(1500);
+         }
+         if ($(this).scrollTop() > 2200) {
+            $('#one').fadeIn(1500, function () {
+               $('#two').fadeIn(1500, function () {
+                  $('#three').fadeIn(1500, function () {
+                     $('#four').fadeIn(1500)
+                  });
+               });
+            });
+         } else {
+            $('#one').hide();
+            $('#two').hide();
+            $('#three').hide();
+            $('#four').hide();
          }
       });
    }
