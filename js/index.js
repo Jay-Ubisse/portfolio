@@ -35,19 +35,19 @@ $(document).ready(function () {
             $('#about').show(1000);
          }
    
-         if ($(this).scrollTop() > 750) {
+         if ($(this).scrollTop() > 700) {
             $('#skills').show(1500);
          } else {
             $('#skills').hide(1500);
          }
 
-         if ($(this).scrollTop() > 1450) {
+         if ($(this).scrollTop() > 1350) {
             $('.projects').show(1500);
          } else {
             $('.projects').hide(1500);
          }
 
-         if ($(this).scrollTop() > 2850) {
+         if ($(this).scrollTop() > 2800) {
             $('#experience').show(1500);
          } else {
             $('#experience').hide(1500);

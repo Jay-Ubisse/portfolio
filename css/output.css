@@ -666,10 +666,6 @@ video {
   height: fit-content;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-\[200px\] {
   height: 200px;
 }
@@ -702,12 +698,6 @@ video {
 
 .w-4\/5 {
   width: 80%;
-}
-
-.min-w-fit {
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
 }
 
 .flex-col {
@@ -1023,14 +1013,16 @@ video {
     margin-top: 5rem;
   }
 
-  .mobile\:h-11 {
-    height: 2.75rem;
+  .mobile\:mt-28 {
+    margin-top: 7rem;
   }
 
-  .mobile\:h-fit {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+  .mobile\:mt-36 {
+    margin-top: 9rem;
+  }
+
+  .mobile\:h-11 {
+    height: 2.75rem;
   }
 
   .mobile\:w-fit {
@@ -1065,10 +1057,6 @@ video {
 
   .mobile\:gap-5 {
     gap: 1.25rem;
-  }
-
-  .mobile\:gap-4 {
-    gap: 1rem;
   }
 
   .mobile\:bg-\[\#778DA9\] {
@@ -1162,22 +1150,8 @@ video {
     height: 4rem;
   }
 
-  .laptop\:h-screen {
-    height: 100vh;
-  }
-
-  .laptop\:h-fit {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-
   .laptop\:min-h-screen {
     min-height: 100vh;
-  }
-
-  .laptop\:min-h-full {
-    min-height: 100%;
   }
 
   .laptop\:w-full {
@@ -1200,10 +1174,6 @@ video {
     width: 50%;
   }
 
-  .laptop\:w-2\/5 {
-    width: 40%;
-  }
-
   .laptop\:flex-row {
     flex-direction: row;
   }
@@ -1222,10 +1192,6 @@ video {
 
   .laptop\:gap-20 {
     gap: 5rem;
-  }
-
-  .laptop\:bg-cover {
-    background-size: cover;
   }
 
   .laptop\:py-4 {
