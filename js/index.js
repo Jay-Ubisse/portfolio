@@ -1,7 +1,7 @@
 $(document).ready(function () {
    $('#about').hide();
    $('#skills').hide();
-   $('#projects').hide();
+   $('.projects').hide();
    $('#experience').hide();
 
    $('#one').hide();
@@ -41,10 +41,10 @@ $(document).ready(function () {
             $('#skills').hide(1500);
          }
 
-         if ($(this).scrollTop() > 1500) {
-            $('#projects').show(1500);
+         if ($(this).scrollTop() > 1450) {
+            $('.projects').show(1500);
          } else {
-            $('#projects').hide(1500);
+            $('.projects').hide(1500);
          }
 
          if ($(this).scrollTop() > 2850) {
@@ -85,9 +85,9 @@ $(document).ready(function () {
          }
 
          if ($(this).scrollTop() > 1200) {
-            $('#projects').show(1500);
+            $('.projects').show(1500);
          } else {
-            $('#projects').hide(1500);
+            $('.projects').hide(1500);
          }
 
          if ($(this).scrollTop() > 1850) {
