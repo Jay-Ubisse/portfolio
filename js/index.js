@@ -1,4 +1,35 @@
 $(document).ready(function () {
+
+   //codigo para dispositivos abaixo de 1024px
+   if ($(window).width() < 1024) {
+      
+      //codigo para mostar e ocultar o menu
+      $( function() {
+         $( "#menu-icon" ).on( "click", function() {
+            $( "#nav" ).animate({
+               left: 0
+            }, 1000 );
+
+            $( "#menu-icon" ).hide();
+            $( "#exit-icon" ).show();
+         });
+
+         $( "#exit-icon" ).on( "click", function() {
+            $( "#nav" ).animate({
+               left: -256
+             }, 1000 );
+
+             $( "#exit-icon" ).hide();
+             $( "#menu-icon" ).show();
+         });
+      });
+   }
+   
+   
+}); // end ready
+
+/**
+ $(document).ready(function () {
    $('#about').hide();
    $('#skills').hide();
    $('.projects').hide();
@@ -113,3 +144,6 @@ $(document).ready(function () {
    }
 
 });
+
+ * 
+ */

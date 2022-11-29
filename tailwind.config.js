@@ -6,16 +6,13 @@ module.exports = {
   theme: {
     screens: {
       'mobile': '320px',
-      'tablet': '415px',
-      'laptop': '768px',
-      'desktop': '1024px',
+      'tablet': '900px',
+      'laptop': '1024px',
     },
     extend: {
       backgroundImage: {
-        'bio': "url('../img/bio.jpg')",
-        'skills': "url('../img/skills.jpg')",
-        'experience': "url('../img/experience.jpg')",
-        'contacts': "url('../img/contacts.jpg')",
+        'background': "url('../img/background.jpg')",
+        'background-mobile': "url('../img/background-mobile.jpg')",
       },
       fontFamily: {
         'inter': 'Inter, sans-serif',
