@@ -18,6 +18,7 @@
       src="https://kit.fontawesome.com/4b43862993.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/dynamic.js"></script>
   </head>
 
   <body class="bg-white flex laptop:flex-row mobile:flex-col">
@@ -105,7 +106,7 @@
         </ul>
       </nav>
     </header>
-    <main class="h-screen overflow-y-scroll laptop:w-4/5 mobile:w-screen">
+    <main class="h-screen overflow-y-scroll laptop:w-4/5 mobile:w-screen p-0">
       <section
         id="intro"
         class="relative min-h-screen w-full laptop:bg-background laptop:bg-cover mobile:bg-background-mobile mobile:bg-cover"
@@ -122,7 +123,7 @@
             </span>
           </div>
           <div
-            class="absolute mobile:top-[30%] mobile:left-[10%] laptop:top-[30%] laptop:left-[30%]"
+            class="absolute mobile:top-[30%] mobile:left-[10%] laptop:top-[40%] laptop:left-[20%]"
           >
             <h1
               class="text-[#000814] mobile:text-5xl mobile:font-semibold mobile:my-3"
@@ -142,16 +143,25 @@
           </div>
         </div>
       </section>
-      <section id="about">
-        <div></div>
-        <div>
-          <p>
-            Sou desenvolvedor Web (Front-End & Back-End), com capacidade de
-            escrever códigos bem estruturados, eficientes e testáveis utilizando
-            as melhores práticas de desenvolvimento de softwares. Sou também web
-            designer, com conhecimentos sólidos de UI/UX, com vista a atender à
-            concepção visual do projecto.
-          </p>
+      <section id="about" class="w-[96%] mx-auto py-6">
+        <h1 class="text-[#003566] text-3xl font-bold mb-2">Sobre</h1>
+        <hr class="w-28 bg-[#003566] h-[6px] mb-6 font-extrabold rounded" >
+        <div class="flex laptop:flex-row-reverse gap-7 mobile:flex-col">
+          <div class="laptop:w-3/4 laptop:mt-5">
+            <h2 class="text-[#003566] text-xl font-semibold mb-4">Olá, eu sou o Jay Ubisse. É um prazer tê-lo aqui.</h2>
+            <p class="text-lg">
+              Sou desenvolvedor Web (Front-End & Back-End) e web designer, com conhecimentos sólidos de UI/UX.
+            </p>
+            <p class="text-lg">
+              Desde que comecei minha jornada como freelancer há mais de 2 anos, fiz trabalho remoto 
+              para pequenas empresas, dei consultoria para startups e colaborei com pessoas talentosas para criar produtos 
+              digitais para uso comercial e do consumidor. Sou silenciosamente confiante, naturalmente curioso e 
+              sempre trabalhando para melhorar minhas habilidades. 
+            </p>
+          </div>
+          <div  class="h-[350px] overflow-hidden my-4 laptop:w-1/4">
+            <img src="./img/IMG-20211127-WA0046.jpg" alt="">
+          </div>
         </div>
       </section>
       <section
@@ -565,6 +575,5 @@
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/dynamic.js"></script>
   </body>
 </html>
