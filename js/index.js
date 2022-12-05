@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
    //codigo para dispositivos abaixo de 1024px
    if ($(window).width() < 1024) {
       
