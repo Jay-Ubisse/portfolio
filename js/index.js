@@ -26,6 +26,7 @@ $(document).ready(function () {
       //codigos para efeitos de scroll
       $( "#about-container" ).hide();
       $( "#skills" ).hide();
+      $( "#resume" ).hide();
 
       $(window).scroll(function(){
          if ($(window).scrollTop() > 500) {
@@ -42,6 +43,17 @@ $(document).ready(function () {
          if ($(window).scrollTop() > 1300) {
             $( "#skills" ).show();
          }
+
+         if ($(window).scrollTop() > 2100) {
+            $( "#resume" ).show();
+            $( "#professional" ).animate({
+               left: 0
+            }, 1000 );
+
+            $( "#education" ).animate({
+               right: 0
+            }, 1500 );
+         }
       });
       //CÓDIGO PARA DISPOSITIVOS A PARTIR DE 1024PX
    } else {
@@ -49,6 +61,7 @@ $(document).ready(function () {
       //codigos para efeitos de scroll
       $( "#about-container" ).hide();
       $( "#skills" ).hide();
+      $( "#resume" ).hide();
 
       $(window).scroll(function(){
          if ($(window).scrollTop() > 300) {
@@ -64,6 +77,17 @@ $(document).ready(function () {
 
          if ($(window).scrollTop() > 800) {
             $( "#skills" ).show();
+         }
+
+         if ($(window).scrollTop() > 1150) {
+            $( "#resume" ).show();
+            $( "#professional" ).animate({
+               left: 0
+            }, 1000 );
+
+            $( "#education" ).animate({
+               right: 0
+            }, 1500 );
          }
       });
    }

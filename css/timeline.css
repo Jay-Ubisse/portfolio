@@ -2,27 +2,21 @@
     box-sizing: border-box;
   }
   
-  body {
-    background-color: #474e5d;
-    font-family: Helvetica, sans-serif;
-  }
-  
   /* The actual timeline (the vertical ruler) */
   .timeline {
     position: relative;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
   }
   
   /* The actual timeline (the vertical ruler) */
   .timeline::after {
     content: '';
     position: absolute;
-    width: 6px;
-    background-color: #c1121f;
+    width: 4px;
+    background-color: #003566;
     top: 0;
     bottom: 0;
-    left: 50%;
     margin-left: -3px;
   }
   
@@ -31,7 +25,7 @@
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    width: 50%;
+    width: 100%;
   }
   
   /* The circles on the timeline */
@@ -41,35 +35,16 @@
     width: 25px;
     height: 25px;
     right: -17px;
-    background-color: #c1121f;
-    border: 4px solid #FF9F55;
+    background-color: #FFFFFF;
+    border: 2px solid #003566;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
   }
   
-  /* Place the container to the left */
-  .left {
-    left: 0;
-  }
-  
   /* Place the container to the right */
   .right {
-    left: 50%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+    left: 0.5%;
   }
   
   /* Add arrows to the right container (pointing left) */
@@ -83,7 +58,7 @@
     left: 30px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent rgba(189, 224, 254, 0.3) transparent transparent;
   }
   
   /* Fix the circle for containers on the right side */
@@ -94,7 +69,7 @@
   /* The actual content */
   .content {
     padding: 20px 30px;
-    background-color: white;
+    background-color: rgba(189, 224, 254, 0.3);
     position: relative;
     border-radius: 6px;
   }
@@ -118,11 +93,11 @@
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent rgba(189, 224, 254, 0.3) transparent transparent;
     }
   
     /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
+  .right::after {
     left: 15px;
     }
     
