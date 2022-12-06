@@ -22,6 +22,40 @@ $(document).ready(function () {
              $( "#menu-icon" ).show();
          });
       });
+
+      //codigos para efeitos de scroll
+      $( "#about-container" ).hide();
+
+      $(window).scroll(function(){
+         if ($(window).scrollTop() > 500) {
+            $( "#about-container" ).show();
+            $( "#about-photo" ).animate({
+               left: 0
+            }, 1000 );
+
+            $( "#about-description" ).animate({
+               right: 0
+            }, 1500 );
+         }
+      });
+      //CÓDIGO PARA DISPOSITIVOS A PARTIR DE 1024PX
+   } else {
+
+      //codigos para efeitos de scroll
+      $( "#about-container" ).hide();
+
+      $(window).scroll(function(){
+         if ($(window).scrollTop() > 300) {
+            $( "#about-container" ).show();
+            $( "#about-photo" ).animate({
+               left: 0
+            }, 1000 );
+
+            $( "#about-description" ).animate({
+               right: 0
+            }, 1500 );
+         }
+      });
    }
    
    
