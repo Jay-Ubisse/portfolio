@@ -587,16 +587,12 @@ video {
   position: relative;
 }
 
-.z-20 {
-  z-index: 20;
-}
-
 .z-30 {
   z-index: 30;
 }
 
-.float-right {
-  float: right;
+.z-20 {
+  z-index: 20;
 }
 
 .m-0 {
@@ -667,10 +663,6 @@ video {
   margin-top: 0.75rem;
 }
 
-.ml-\[23\%\] {
-  margin-left: 23%;
-}
-
 .flex {
   display: flex;
 }
@@ -713,20 +705,12 @@ video {
   height: 200px;
 }
 
+.h-\[4px\] {
+  height: 4px;
+}
+
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-\[200px\] {
-  min-height: 200px;
-}
-
-.min-h-\[600px\] {
-  min-height: 600px;
-}
-
-.min-h-\[700px\] {
-  min-height: 700px;
 }
 
 .w-screen {
@@ -763,8 +747,8 @@ video {
   width: 80%;
 }
 
-.flex-row {
-  flex-direction: row;
+.w-56 {
+  width: 14rem;
 }
 
 .flex-col {
@@ -841,14 +825,14 @@ video {
   border-color: rgb(47 62 70 / var(--tw-border-opacity));
 }
 
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .border-\[\#c1121f\] {
   --tw-border-opacity: 1;
   border-color: rgb(193 18 31 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -887,6 +871,40 @@ video {
 .bg-\[\#c1121f\] {
   --tw-bg-opacity: 1;
   background-color: rgb(193 18 31 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#a2d2ff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(162 210 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#bde0fe\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(189 224 254 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#bde0fe\]\/50 {
+  background-color: rgb(189 224 254 / 0.5);
+}
+
+.bg-\[\#bde0fe\]\/10 {
+  background-color: rgb(189 224 254 / 0.1);
+}
+
+.bg-\[\#bde0fe\]\/20 {
+  background-color: rgb(189 224 254 / 0.2);
+}
+
+.bg-white\/0 {
+  background-color: rgb(255 255 255 / 0);
+}
+
+.bg-white\/40 {
+  background-color: rgb(255 255 255 / 0.4);
 }
 
 .bg-gradient-to-b {
@@ -933,6 +951,10 @@ video {
 
 .p-0 {
   padding: 0px;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .py-6 {
@@ -1105,36 +1127,12 @@ video {
     left: 10%;
   }
 
-  .mobile\:right-full {
-    right: 100%;
-  }
-
-  .mobile\:left-full {
-    left: 100%;
-  }
-
-  .mobile\:right-\[50\%\] {
-    right: 50%;
-  }
-
   .mobile\:-right-full {
     right: -100%;
   }
 
   .mobile\:-left-full {
     left: -100%;
-  }
-
-  .mobile\:-right-\[60\%\] {
-    right: -60%;
-  }
-
-  .mobile\:-left-\[20\%\] {
-    left: -20%;
-  }
-
-  .mobile\:z-10 {
-    z-index: 10;
   }
 
   .mobile\:my-3 {
@@ -1167,12 +1165,12 @@ video {
     width: 100vw;
   }
 
-  .mobile\:w-11\/12 {
-    width: 91.666667%;
-  }
-
   .mobile\:w-full {
     width: 100%;
+  }
+
+  .mobile\:w-11\/12 {
+    width: 91.666667%;
   }
 
   .mobile\:w-fit {
@@ -1277,16 +1275,8 @@ video {
     top: 7rem;
   }
 
-  .laptop\:left-\[23\%\] {
-    left: 23%;
-  }
-
-  .laptop\:float-right {
-    float: right;
-  }
-
-  .laptop\:float-left {
-    float: left;
+  .laptop\:left-\[17\%\] {
+    left: 17%;
   }
 
   .laptop\:ml-6 {
@@ -1297,28 +1287,32 @@ video {
     margin-top: 1.25rem;
   }
 
+  .laptop\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .laptop\:hidden {
     display: none;
-  }
-
-  .laptop\:min-h-screen {
-    min-height: 100vh;
-  }
-
-  .laptop\:min-h-\[700px\] {
-    min-height: 700px;
   }
 
   .laptop\:min-h-\[500px\] {
     min-height: 500px;
   }
 
+  .laptop\:min-h-screen {
+    min-height: 100vh;
+  }
+
+  .laptop\:min-h-\[400px\] {
+    min-height: 400px;
+  }
+
   .laptop\:w-\[23\%\] {
     width: 23%;
   }
 
-  .laptop\:w-4\/5 {
-    width: 80%;
+  .laptop\:w-\[77\%\] {
+    width: 77%;
   }
 
   .laptop\:w-3\/4 {
@@ -1337,12 +1331,20 @@ video {
     width: 50%;
   }
 
-  .laptop\:w-\[77\%\] {
-    width: 77%;
+  .laptop\:w-2\/5 {
+    width: 40%;
   }
 
-  .laptop\:w-\[50\%\] {
-    width: 50%;
+  .laptop\:w-\[35\%\] {
+    width: 35%;
+  }
+
+  .laptop\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .laptop\:w-\[38\%\] {
+    width: 38%;
   }
 
   .laptop\:flex-row {
@@ -1351,6 +1353,14 @@ video {
 
   .laptop\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .laptop\:flex-col {
+    flex-direction: column;
+  }
+
+  .laptop\:justify-between {
+    justify-content: space-between;
   }
 
   .laptop\:justify-around {
