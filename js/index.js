@@ -27,6 +27,7 @@ $(document).ready(function () {
       $( "#about-container" ).hide();
       $( "#skills" ).hide();
       $( "#resume" ).hide();
+      $( "#portfolio" ).hide();
 
       $(window).scroll(function(){
          if ($(window).scrollTop() > 500) {
@@ -54,7 +55,21 @@ $(document).ready(function () {
                right: 0
             }, 1500 );
          }
+
+         if ($(window).scrollTop() > 5600) {
+            $( "#portfolio" ).show();
+            $( "#portfolio-1" ).animate({
+               left: 0
+            }, 1000 );
+
+            $( "#portfolio-2" ).animate({
+               right: 0
+            }, 1500 );
+         }
+
       });
+
+
       //CÓDIGO PARA DISPOSITIVOS A PARTIR DE 1024PX
    } else {
 
@@ -62,6 +77,7 @@ $(document).ready(function () {
       $( "#about-container" ).hide();
       $( "#skills" ).hide();
       $( "#resume" ).hide();
+      $( "#portfolio" ).hide();
 
       $(window).scroll(function(){
          if ($(window).scrollTop() > 300) {
@@ -89,6 +105,18 @@ $(document).ready(function () {
                right: 0
             }, 1500 );
          }
+
+         if ($(window).scrollTop() > 2200) {
+            $( "#portfolio" ).show();
+            $( "#portfolio-1" ).animate({
+               left: 0
+            }, 1000 );
+
+            $( "#portfolio-2" ).animate({
+               right: 0
+            }, 1500 );
+         }
+
       });
    }
    
