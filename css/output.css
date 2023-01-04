@@ -619,6 +619,11 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -815,6 +820,10 @@ video {
   gap: 1rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -955,6 +964,10 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-inter {
   font-family: Inter, sans-serif;
 }
@@ -1033,6 +1046,11 @@ video {
 .text-\[\#c1121f\] {
   --tw-text-opacity: 1;
   color: rgb(193 18 31 / var(--tw-text-opacity));
+}
+
+.text-\[\#bde0fe\] {
+  --tw-text-opacity: 1;
+  color: rgb(189 224 254 / var(--tw-text-opacity));
 }
 
 .placeholder-gray-500::-moz-placeholder {
