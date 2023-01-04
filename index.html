@@ -387,10 +387,10 @@
       </div>
     </section>
     <!--Services section-->
-    <section class="w-full mt-12 p-6 bg-white laptop:min-h-[450px] mobile:min-h-[1200px] font-inter">
+    <section id="services" class="w-full mt-12 p-6 bg-white laptop:min-h-[450px] mobile:min-h-[1200px] font-inter">
       <h1 class="text-[#003566] text-2xl font-bold mb-2">Serviços</h1>
       <hr class="w-20 bg-[#003566] h-[4px] mb-10 font-extrabold rounded" />
-      <div id="services" class="flex flex-col mobile:gap-16 mobile:w-fit mobile:mx-auto">
+      <div class="flex flex-col mobile:gap-16 mobile:w-fit mobile:mx-auto">
         <section class="flex laptop:flex-row laptop:justify-between mobile:flex-col mobile:gap-10">
           <div class="laptop:w-1/3 mobile:w-11/12 flex flex-row gap-3">
             <div class="w-1/4">
@@ -450,11 +450,11 @@
       </div>
     </section>
      <!--Contacts section-->
-     <section class="w-full mt-12 p-6 bg-[#bde0fe]/20 laptop:min-h-[450px] mobile:min-h-[1200px] font-inter">
+     <section id="contact" class="w-full mt-12 p-6 bg-[#bde0fe]/20 laptop:min-h-[450px] mobile:min-h-[1200px] font-inter">
       <h1 class="text-[#003566] text-2xl font-bold mb-2">Contactos</h1>
       <hr class="w-20 bg-[#003566] h-[4px] mb-10 font-extrabold rounded" />
-      <div class="flex laptop:flex-row mobile:flex-col">
-        <div>
+      <div class="flex laptop:flex-row laptop:justify-around mobile:flex-col mobile:gap-4">
+        <div class="laptop:w-[45%] mobile:w-[100%]">
           <div class="flex flex-col gap-6">
             <div class="flex flex-row gap-3">
               <div class="text-[#003566]">
@@ -498,32 +498,27 @@
             </div>
           </div>
         </div>
-        <div>
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div>
-              <div>
-                <label for="name">Your Name</label>
+        <div class="bg-[#bde0fe] p-5 laptop:w-[45%] mobile:w-[100%]">
+          <form action="forms/contact.php" method="post" role="form" class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4">
+              <div class="flex flex-col gap-2">
+                <label for="name">Nome</label>
                 <input type="text" name="name" id="name" required>
               </div>
-              <div>
-                <label for="name">Your Email</label>
+              <div class="flex flex-col gap-2">
+                <label for="name">Email</label>
                 <input type="email" name="email" id="email" required>
               </div>
             </div>
-            <div>
-              <label for="name">Subject</label>
+            <div class="flex flex-col gap-2">
+              <label for="name">Assunto</label>
               <input type="text" name="subject" id="subject" required>
             </div>
-            <div>
-              <label for="name">Message</label>
+            <div class="flex flex-col gap-2">
+              <label for="name">Mensagem</label>
               <textarea name="message" rows="10" required></textarea>
             </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
+            <div class="text-center bg-[#003566] py-2 px-5 rounded-md text-white font-semibold"><button type="submit">Enviar Mensagem</button></div>
           </form>
         </div>
       </div>
@@ -531,10 +526,6 @@
   </main>
   <footer class="hidden bg-[#415A77] p-1">
     <div class="laptop:flex-row mobile:flex-col laptop:gap-20 mobile:gap-5 w-fit mx-auto p-1 hidden">
-      <div
-        class="border-x-4 border-[#c1121f] px-2 rounded-full laptop:text-lg font-extrabold text-[#c1121f] mobile:w-fit mobile:mt-1 mobile:mx-auto mobile:text-xl">
-        U
-      </div>
       <p class="mt-3 laptop:text-sm mobile:text-xs">
         &copy;&nbsp;2022. Todos os direitos reservados.
         <span>Jay Ubisse</span>
